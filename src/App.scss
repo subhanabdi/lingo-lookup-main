@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@700&display=swap');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+$background-color: rgb(17 24 39);
+
+html,
+body {
+  font-family: 'Atkinson Hyperlegible', sans-serif;
+  font-display: swap;
+}
+
+h1 {
+  font-family: 'Cormorant Upright', serif;
+}
+
+*::selection {
+  color: $background-color;
+  background-color: rgb(209 213 219);
+}
+
+*::-webkit-scrollbar {
+  width: 5px;
+  background-color: $background-color;
+
+  &-thumb {
+    background-color: rgb(107 114 128);
+
+    &:hover {
+      background-color: #fff;
+    }
+
+    &:active {
+      background-color: rgb(107 114 128);
+    }
+  }
+}
+
+.search-results-left {
+  flex: 3;
+}
+
+.search-results-right {
+  flex: 1.25;
+}
